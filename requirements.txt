@@ -1,0 +1,7 @@
+numpy==1.26.4
+progressbar2==4.5.0
+pygame==2.6.0
+python-utils==3.8.2
+PyTMX==3.32
+scipy==1.11.4
+typing_extensions==4.12.2

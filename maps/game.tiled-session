@@ -1,0 +1,78 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level1.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "scale": 1.1316875,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 399.84536367150827,
+                "y": 320.3181090186116
+            }
+        },
+        "level1.tmx#Bush_Tiles": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Chicken_Baby": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Fence gates animation sprites ": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Fences": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Grass_tiles_v2": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Stone_Ground_Hills_Tiles": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Trees, stumps and bushes": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Water": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Wooden_Bridge_v2": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Wooden_House_Walls_Tilset": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#door animation sprites": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#tools-n-meterial-items": {
+            "scaleInDock": 1.5
+        }
+    },
+    "last.exportedFilePath": "/home/jnkconsult/Dev/python/maps",
+    "last.imagePath": "/home/jnkconsult/Dev/python/assets/Tilesets/Building parts/Animal Structures",
+    "map.height": 80,
+    "map.lastUsedExportFilter": "Tous les Fichiers (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 100,
+    "openFiles": [
+        "level1.tmx"
+    ],
+    "project": "game.tiled-project",
+    "recentFiles": [
+        "level1.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

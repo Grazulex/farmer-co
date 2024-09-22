@@ -140,6 +140,9 @@ class Cow(pygame.sprite.Sprite):
 
     def move(self, dt):
         if self.move_timer.is_finished():
+            if self.direction.magnitude() > 0:
+                self.direction = self.direction.normalize()
+
             self.direction.x = random.choice([-1, 0, 1])
             self.direction.y = random.choice([-1, 0, 1])
             self.move_timer.start()
@@ -161,10 +164,20 @@ class Cow(pygame.sprite.Sprite):
                     else:
                         self.status = 'right_idle' if self.status.startswith('right') else 'left_idle'
 
+            # check if cow is out of bounds
+            if self.rect.left < 0:
+                self.direction.x = 1
+            if self.rect.right > SCREEN_WIDTH:
+                self.direction.x = -1
+            if self.rect.top < 0:
+                self.direction.y = 1
+            if self.rect.bottom > SCREEN_HEIGHT:
+                self.direction.y = -1
 
-        # Update position
-        self.pos += self.direction * self.speed * dt
-        self.rect.center = self.pos
+        # Update position only if the cow is supposed to move
+        if self.direction.x != 0 or self.direction.y != 0:
+            self.pos += self.direction * self.speed * dt
+            self.rect.center = self.pos
 
     def update(self, dt):
         self.move(dt)

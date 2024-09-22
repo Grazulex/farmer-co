@@ -42,8 +42,8 @@ class Level:
 		# music
 		self.success = pygame.mixer.Sound('../audio/success.wav')
 		self.success.set_volume(0.3)
-		##self.music = pygame.mixer.Sound('../audio/music.mp3')
-		##self.music.play(loops = -1)
+		self.music = pygame.mixer.Sound('../audio/music.mp3')
+		self.music.play(loops = -1)
 
 	def setup(self):
 		tmx_data = load_pygame('../data/map.tmx')
@@ -152,12 +152,17 @@ class Level:
 					Particle(plant.rect.topleft, plant.image, self.all_sprites, z = LAYERS['main'])
 					self.soil_layer.grid[plant.rect.centery // TILE_SIZE][plant.rect.centerx // TILE_SIZE].remove('P')
 
-	def run(self,dt):
-		
+
+	def run(self, dt):
 		# drawing logic
 		self.display_surface.fill('black')
 		self.all_sprites.custom_draw(self.player)
-		
+		self.all_sprites.custom_draw_cow(self.cow)
+		self.all_sprites.custom_draw_cow(self.cow2)
+		self.all_sprites.custom_draw_cow(self.cow3)
+		self.all_sprites.custom_draw_cow(self.cow4)
+		self.all_sprites.custom_draw_cow(self.cow5)
+
 		# updates
 		if self.shop_active:
 			self.menu.update()
@@ -180,6 +185,15 @@ class CameraGroup(pygame.sprite.Group):
 		super().__init__()
 		self.display_surface = pygame.display.get_surface()
 		self.offset = pygame.math.Vector2()
+	
+	def custom_draw_cow(self, cow):
+		for layer in LAYERS.values():
+			for sprite in sorted(self.sprites(), key=lambda sprite: sprite.rect.centery):
+				if sprite.z == layer:
+					if sprite == cow:
+						offset_rect = sprite.rect.copy()
+						offset_rect.center -= self.offset
+						self.display_surface.blit(sprite.image, offset_rect)
 
 	def custom_draw(self, player):
 		self.offset.x = player.rect.centerx - SCREEN_WIDTH / 2

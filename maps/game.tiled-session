@@ -1,0 +1,75 @@
+{
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "level1.tmx": {
+            "scale": 1,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 254.5,
+                "y": 210.5
+            }
+        },
+        "level1.tmx#Barn structures": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Boats": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Bush_Tiles": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Chicken_Baby": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Chikcen_Houses": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Fence gates animation sprites ": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Fences": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Grass_tiles_v2": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Hills": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Stone_Ground_Hills_Tiles": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Stone_Ground_Tiles": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Trees, stumps and bushes": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Water": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Water tray": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Wooden_Bridge": {
+            "scaleInDock": 1
+        },
+        "level1.tmx#Wooden_Bridge_v2": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#Wooden_House_Walls_Tilset": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#door animation sprites": {
+            "scaleInDock": 1.5
+        },
+        "level1.tmx#tools-n-meterial-items": {
+            "scaleInDock": 1.5
+        }
+    }
+}
